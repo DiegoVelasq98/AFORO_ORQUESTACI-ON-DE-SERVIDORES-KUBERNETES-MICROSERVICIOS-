@@ -1,0 +1,84 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{geometry}
+\geometry{top=2.4cm, bottom=2.4cm, left=2.4cm, right=2.4cm}
+\setlength{\parindent}{0pt}
+\renewcommand{\baselinestretch}{1}
+
+\begin{document}
+
+\begin{center}
+\textbf{\uppercase{Orquestación de servidores, Kubernetes, Microservicios, OAuth 2.0 e Implementación en la nube (12-Factor Application)}}\\[10pt]
+\textit{D. F. Velásquez Pichilla}\\
+\textit{7690-16-3882 Universidad Mariano Gálvez}\\
+\textit{Seminario de Tecnología de Información}\\
+\textit{dvelasquezp4@miumg.edu.gt}
+\end{center}
+
+\textbf{Resumen}\\
+El crecimiento de las aplicaciones en la nube ha obligado a adoptar modelos más seguros, escalables y fáciles de mantener. En este marco, la orquestación de servidores, Kubernetes, los microservicios, OAuth 2.0 y los principios de las aplicaciones de 12 factores son pilares fundamentales. Este ensayo analiza las características, la utilidad, la implementación y las ventajas de cada enfoque, presentando ejemplos reales de organizaciones que los aplican.\\[8pt]
+
+\textbf{Palabras claves:} orquestación, Kubernetes, microservicios, OAuth 2.0, 12-Factor App, nube
+
+\textbf{Desarrollo del tema}\\
+
+\textbf{1. Orquestación de servidores}\\
+La orquestación de servidores consiste en la automatización y coordinación de tareas relacionadas con la infraestructura tecnológica. Su propósito es evitar procesos manuales y asegurar que cada servidor cumpla las mismas configuraciones de manera consistente. Se implementa mediante herramientas como Ansible, Puppet o Terraform, que permiten describir en archivos el estado deseado de los sistemas.  
+
+Entre sus principales ventajas se encuentra la reducción de errores humanos, la rapidez en los despliegues y la posibilidad de replicar entornos idénticos en cuestión de minutos. Además, todo cambio queda registrado, lo que facilita auditorías y controles de seguridad. Empresas como Netflix y Slack se apoyan en la orquestación para desplegar entornos de prueba y producción en plazos muy cortos, manteniendo calidad y estabilidad en sus servicios.  
+
+También permite a las organizaciones responder más rápido a nuevas demandas del negocio. Si se requiere lanzar un nuevo servicio digital o habilitar un ambiente de desarrollo para un equipo, la orquestación lo hace posible sin necesidad de largos tiempos de espera. Esta capacidad de adaptación resulta estratégica en industrias como la banca, la salud y el comercio electrónico, donde la velocidad es un factor de competitividad.
+
+\textbf{2. Kubernetes}\\
+Kubernetes es una plataforma para administrar contenedores de manera masiva. Su utilidad principal radica en coordinar aplicaciones distribuidas, asegurando que siempre estén disponibles y que se ajusten a la carga de usuarios. Para implementarlo se definen clústeres de nodos y un plano de control que decide dónde ejecutar cada contenedor.  
+
+Sus ventajas incluyen la escalabilidad automática, la tolerancia a fallos y la portabilidad entre diferentes nubes. Además, permite optimizar costos al asignar recursos de forma dinámica según la demanda real. Spotify, Airbnb y Shopify lo emplean a diario para garantizar que millones de usuarios accedan a sus servicios sin interrupciones, incluso en momentos de alta demanda.  
+
+Otro punto a resaltar es que Kubernetes fomenta una cultura de DevOps al integrarse con pipelines de integración y entrega continua. Esto significa que los equipos pueden probar y lanzar nuevas versiones de software varias veces al día con un mínimo de riesgo. Gracias a estas características, Kubernetes se ha convertido en un estándar de facto para aplicaciones modernas en la nube.
+
+\textbf{3. Microservicios}\\
+Los microservicios representan una arquitectura que divide las aplicaciones en componentes pequeños e independientes. Cada servicio cumple una función específica y se comunica con los demás mediante APIs. Esto permite que los equipos trabajen en paralelo y que cada módulo pueda escalarse de manera individual.  
+
+Las ventajas más destacadas son la flexibilidad, la resiliencia y la rapidez de desarrollo. Si un microservicio falla, los demás continúan funcionando, lo que asegura continuidad del sistema. Además, cada servicio puede programarse con el lenguaje o la tecnología que mejor se adapte a sus necesidades. Netflix opera con cientos de microservicios que gestionan desde recomendaciones hasta streaming, mientras que Amazon y Uber han utilizado esta arquitectura para crecer globalmente y mantener sus operaciones en tiempo real.  
+
+La adopción de microservicios también facilita la innovación. Al poder desplegar cambios en un servicio sin afectar a los demás, las organizaciones experimentan con nuevas ideas de forma ágil. Esto explica por qué startups tecnológicas y grandes corporaciones han migrado de sistemas monolíticos a arquitecturas distribuidas para mantenerse competitivas.
+
+\textbf{4. OAuth 2.0}\\
+OAuth 2.0 es un protocolo que brinda acceso seguro a aplicaciones sin necesidad de compartir contraseñas. Se implementa mediante la entrega de tokens temporales que otorgan permisos limitados a aplicaciones de terceros. Su propósito es proteger la identidad del usuario y mejorar la experiencia al permitir inicios de sesión rápidos.  
+
+Entre sus ventajas destaca la seguridad al proteger credenciales, el control granular sobre los datos compartidos y la simplicidad en el acceso. GitHub lo utiliza para que herramientas externas accedan a repositorios de manera restringida, mientras que Microsoft lo aplica en Azure para gestionar accesos corporativos de forma centralizada.  
+
+En la práctica, OAuth 2.0 se ha convertido en un estándar que favorece la confianza del usuario. Millones de personas lo emplean a diario al iniciar sesión en redes sociales, aplicaciones bancarias o plataformas de streaming, lo que demuestra su impacto en la vida cotidiana y su relevancia en la economía digital.
+
+\textbf{5. Implementación en la nube (12-Factor Application)}\\
+El modelo de 12 factores define buenas prácticas para construir aplicaciones nativas de la nube. Propone lineamientos como separar la configuración del código, declarar dependencias y diseñar procesos sin estado para que las aplicaciones puedan escalar horizontalmente.  
+
+Este enfoque ofrece ventajas claras: portabilidad entre diferentes entornos, facilidad de escalado y mayor mantenibilidad. Además, fomenta la disciplina en el desarrollo al promover estructuras limpias y coherentes. Heroku impulsó este modelo y empresas como Salesforce, AWS y Google Cloud lo recomiendan ampliamente para garantizar que las aplicaciones sean estables, seguras y preparadas para crecer.  
+
+El modelo también ayuda a reducir la deuda técnica. Al aplicar estos principios desde el inicio, las organizaciones evitan problemas comunes como configuraciones confusas, dependencias ocultas o dificultades al migrar entre entornos. En consecuencia, los 12 factores no solo mejoran el rendimiento técnico, sino que aportan beneficios de negocio al facilitar la innovación y reducir los costos de mantenimiento.
+
+\textbf{Observaciones y comentarios}\\
+Cada uno de los enfoques descritos responde a necesidades específicas, pero juntos forman un ecosistema coherente. La orquestación controla servidores, Kubernetes gestiona contenedores, los microservicios ofrecen modularidad, OAuth 2.0 asegura accesos y el modelo de 12 factores orienta el desarrollo en la nube. En conjunto, proporcionan una base sólida para construir soluciones digitales resilientes.  
+
+La integración de estas prácticas se observa en la mayoría de compañías tecnológicas líderes del mercado. Al combinarlas, logran un ciclo de desarrollo más ágil, sistemas más seguros y servicios que se adaptan mejor a las exigencias de los usuarios modernos.
+
+\textbf{Conclusiones}
+\begin{enumerate}
+    \item La orquestación de servidores agiliza procesos y mantiene entornos uniformes.  
+    \item Kubernetes garantiza escalabilidad automática y disponibilidad en aplicaciones distribuidas.  
+    \item Los microservicios aportan independencia, resiliencia y flexibilidad tecnológica.  
+    \item OAuth 2.0 refuerza la seguridad y simplifica la experiencia de los usuarios.  
+    \item El modelo de 12 factores establece lineamientos para aplicaciones portables, escalables y fáciles de mantener.  
+\end{enumerate}
+
+\textbf{Bibliografía}
+\begin{itemize}
+    \item Burns, B., Beda, J., \& Hightower, K. (2017). \textit{Kubernetes: Up and Running}. O’Reilly Media.
+    \item Fowler, M., \& Newman, S. (2019). \textit{Microservices: Principles and Practices}. O’Reilly Media.
+    \item Hardt, D. (2012). \textit{The OAuth 2.0 Authorization Framework}. IETF RFC 6749.
+    \item Heroku. (2022). \textit{The Twelve-Factor App}. Heroku Guidelines.
+    \item HashiCorp. (2020). \textit{Terraform: Up and Running}. O’Reilly Media.
+\end{itemize}
+
+\end{document}
